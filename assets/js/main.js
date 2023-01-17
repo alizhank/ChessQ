@@ -1,25 +1,23 @@
-/*=============== SHOW MENU ===============*/
+// show menu
 const navMenu = document.getElementById('nav-menu'),
       navToggle = document.getElementById('nav-toggle'),
       navClose = document.getElementById('nav-close')
 
-/*===== MENU SHOW =====*/
-/* Validate if constant exists */
+// menu show
 if(navToggle){
     navToggle.addEventListener('click', () =>{
         navMenu.classList.add('show-menu')
     })
 }
 
-/*===== MENU HIDDEN =====*/
-/* Validate if constant exists */
+// menu hidden
 if(navClose){
     navClose.addEventListener('click', () =>{
         navMenu.classList.remove('show-menu')
     })
 }
 
-/*=============== REMOVE MENU MOBILE ===============*/
+// remove menu mobile
 const navLink = document.querySelectorAll('.nav__link')
 
 function linkAction(){
@@ -29,7 +27,7 @@ function linkAction(){
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
-/*=============== CHANGE BACKGROUND HEADER ===============*/
+// change background header
 function scrollHeader(){
     const header = document.getElementById('header')
     // When the scroll is greater than 80 viewport height, add the scroll-header class to the header tag
@@ -37,7 +35,7 @@ function scrollHeader(){
 }
 window.addEventListener('scroll', scrollHeader)
 
-/*=============== QUESTIONS ACCORDION ===============*/
+// questions accordion
 const accordionItems = document.querySelectorAll('.questions__item')
 
 accordionItems.forEach((item) =>{
@@ -66,7 +64,7 @@ const toggleItem = (item) =>{
     }
 }
 
-/*===== LOGIN SHOW and HIDDEN =====*/
+// login show and hidden
 const signUp = document.getElementById('sign-up'),
     signIn = document.getElementById('sign-in'),
     loginIn = document.getElementById('login-in'),

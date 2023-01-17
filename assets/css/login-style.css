@@ -1,7 +1,6 @@
 .login{
   display: grid;
   grid-template-columns: 100%;
-  height: 100vh;
   margin-left: 1.5rem;
   margin-right: 1.5rem;
 }
@@ -162,7 +161,6 @@
   display: none;
 }
 
-/* ===== MEDIA QUERIES =====*/
 @media screen and (min-width: 576px){
   .login__forms{
     width: 348px;
@@ -170,12 +168,7 @@
   }
 }
 
-@media screen and (min-width: 1024px){
-  .login{
-    height: 100vh;
-    overflow: hidden;
-  }
-
+@media screen and (min-width: 992px){
   .login__content{
     grid-template-columns: repeat(2, max-content);
     justify-content: center;

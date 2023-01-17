@@ -1,6 +1,6 @@
 .gallery__description{
     text-align: center;
-  }
+}
   
 .gallery__container{
   padding: 3rem 0;
@@ -69,7 +69,4 @@
   .gallery__item {
     height: 250px;
   }
-}
-
-@media screen and (min-width: 1200px){
 }
